@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Abraham Coiman</title>
+    <link>https://acoiman.github.io/authors/</link>
+      <atom:link href="https://acoiman.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://acoiman.github.io/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>https://acoiman.github.io/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://acoiman.github.io/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://acoiman.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;Abraham Coiman is an agronomist specialized in geomatics. His research interests include Geographical Information System (GIS), Remote Sensing and Geographical Data Science. With a bachelor’s degree in Agronomy and a postgraduate diploma in Geomatics, he has more than ten years of experience in using Geospatial Information Technology, GIS and Remote Sensing tools.&lt;/p&gt;
+&lt;p&gt;His professional and scientific experience includes spatial analysis using ArcGIS and QGIS, Remote Sensing image analysis using ENVI, eCognition and Google Earth Engine, creating highly accurate maps, building web mapping applications using ArcGIS online and open source software, and geospatial analysis using data science tools.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
