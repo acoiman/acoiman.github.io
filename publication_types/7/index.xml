@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Abraham Coiman</title>
-    <link>https://acoiman.github.io/publication/</link>
-      <atom:link href="https://acoiman.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2020 16:56:58 -0430</lastBuildDate>
+    <title>7 | Abraham Coiman</title>
+    <link>https://acoiman.github.io/publication_types/7/</link>
+      <atom:link href="https://acoiman.github.io/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
+    <description>7</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 24 Jan 2020 16:31:45 -0430</lastBuildDate>
     <image>
       <url>https://acoiman.github.io/img/icon-192.png</url>
-      <title>Publications</title>
-      <link>https://acoiman.github.io/publication/</link>
+      <title>7</title>
+      <link>https://acoiman.github.io/publication_types/7/</link>
     </image>
-    
-    <item>
-      <title>Building Interactive Web Maps with i3geo</title>
-      <link>https://acoiman.github.io/publication/i3geo/</link>
-      <pubDate>Sat, 25 Jan 2020 16:56:58 -0430</pubDate>
-      <guid>https://acoiman.github.io/publication/i3geo/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>PGDip. Thesis in Geomatics</title>

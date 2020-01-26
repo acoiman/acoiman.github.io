@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Abraham Coiman</title>
+    <link>https://acoiman.github.io/publication_types/1/</link>
+      <atom:link href="https://acoiman.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2020 16:56:58 -0430</lastBuildDate>
+    <image>
+      <url>https://acoiman.github.io/img/icon-192.png</url>
+      <title>1</title>
+      <link>https://acoiman.github.io/publication_types/1/</link>
+    </image>
+    
+    <item>
+      <title>Building Interactive Web Maps with i3geo</title>
+      <link>https://acoiman.github.io/publication/i3geo/</link>
+      <pubDate>Sat, 25 Jan 2020 16:56:58 -0430</pubDate>
+      <guid>https://acoiman.github.io/publication/i3geo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

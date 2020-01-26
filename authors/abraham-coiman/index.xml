@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abraham Coiman</title>
-    <link>https://acoiman.github.io/</link>
-      <atom:link href="https://acoiman.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://acoiman.github.io/authors/abraham-coiman/</link>
+      <atom:link href="https://acoiman.github.io/authors/abraham-coiman/index.xml" rel="self" type="application/rss+xml" />
     <description>Abraham Coiman</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2020 16:56:58 -0430</lastBuildDate>
     <image>
       <url>https://acoiman.github.io/img/icon-192.png</url>
       <title>Abraham Coiman</title>
-      <link>https://acoiman.github.io/</link>
+      <link>https://acoiman.github.io/authors/abraham-coiman/</link>
     </image>
     
     <item>
@@ -34,16 +34,6 @@
       <pubDate>Thu, 23 Jan 2020 16:55:06 -0430</pubDate>
       <guid>https://acoiman.github.io/publication/thesis_1/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Mining Geoportal</title>
-      <link>https://acoiman.github.io/project/geomina/</link>
-      <pubDate>Sat, 18 Jan 2020 16:21:55 -0430</pubDate>
-      <guid>https://acoiman.github.io/project/geomina/</guid>
-      <description>&lt;p style=&#39;text-align: justify;&#39;&gt;The main goal of the Mining Geoportal (GeoMiNa) is to serve as a central repository for all data related to mining activities in Venezuela. GeoMiNa is a free and open data resource intended to support public and private management in the mining sector, as well as a means to exchange data between stakeholders. GeoMiNa’s users will be the staff of the Mining Ministry &lt;a href=&#34;http://www.desarrollominero.gob.ve/&#34; target=&#34;_blank&#34;&gt;(MPPDME)&lt;/a&gt; and the Institute for Geology and Mining (INGEOMIN), who will use the data for mining research and planning in the Bolivarian Republic of Venezuela.&lt;/p&gt;
-&lt;p&gt;Link: &lt;a href=&#34;http://sigminas.desarrollominero.gob.ve/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;http://sigminas.desarrollominero.gob.ve&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>

@@ -5,12 +5,28 @@
     <link>https://acoiman.github.io/publication_types/</link>
       <atom:link href="https://acoiman.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jan 2020 16:56:58 -0430</lastBuildDate>
     <image>
       <url>https://acoiman.github.io/img/icon-192.png</url>
       <title>Publication_types</title>
       <link>https://acoiman.github.io/publication_types/</link>
     </image>
+    
+    <item>
+      <title>1</title>
+      <link>https://acoiman.github.io/publication_types/1/</link>
+      <pubDate>Sat, 25 Jan 2020 16:56:58 -0430</pubDate>
+      <guid>https://acoiman.github.io/publication_types/1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>7</title>
+      <link>https://acoiman.github.io/publication_types/7/</link>
+      <pubDate>Fri, 24 Jan 2020 16:31:45 -0430</pubDate>
+      <guid>https://acoiman.github.io/publication_types/7/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
