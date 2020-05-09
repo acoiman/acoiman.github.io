@@ -5,12 +5,23 @@
     <link>https://acoiman.github.io/project/</link>
       <atom:link href="https://acoiman.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 18 Jan 2020 16:21:55 -0430</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 03 May 2020 10:18:59 -0430</lastBuildDate>
     <image>
-      <url>https://acoiman.github.io/img/icon-192.png</url>
+      <url>https://acoiman.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>https://acoiman.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Geoportal INSAI</title>
+      <link>https://acoiman.github.io/project/geoportalinsai/</link>
+      <pubDate>Sun, 03 May 2020 10:18:59 -0430</pubDate>
+      <guid>https://acoiman.github.io/project/geoportalinsai/</guid>
+      <description>&lt;p style=&#39;text-align: justify;&#39;&gt;The Geoportal INSAI  was conceived as a tool to leverage the national plant protection and animal health system in Venezuela. It was based on open-source software, using &lt;a href=&#34;https://mapserver.org/&#34; target=&#34;_blank&#34;&gt;MapServer&lt;/a&gt; for publishing geospatial data, in conjunction with &lt;a href=&#34;http://www.gvsig.com/en/products/i3geo&#34; target=&#34;_blank&#34;&gt;i3Geo&lt;/a&gt;, which is an application for developing interactive web maps.&lt;/p&gt;
+&lt;p style=&#39;text-align: justify;&#39;&gt;Geoportal INSAI displayed several predefined web map interfaces: regions, INSAI&#39;s offices, transit permits, epidemiology reports, and so on. Equally,  it was possible that a user could create his own map and make spatial analysis directly on the web.&lt;/p&gt;
+&lt;p style=&#39;text-align: justify;&#39;&gt;Unfortunately, this geoportal is currently offline. However,  you can obtain more information about this project from the &lt;a href=&#34;http://www.gvsig.com/en&#34; target=&#34;_blank&#34;&gt;gvSIG association&lt;/a&gt; by clicking &lt;a href=&#34;http://box5589.temp.domains/~gvsigorg//category/country/venezuela&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;  and &lt;a href=&#34;https://bit.ly/3deIvGn&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt; 
+</description>
+    </item>
     
     <item>
       <title>Mining Geoportal</title>

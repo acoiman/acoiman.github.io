@@ -5,12 +5,53 @@
     <link>https://acoiman.github.io/post/</link>
       <atom:link href="https://acoiman.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 02 May 2020 09:54:39 -0430</lastBuildDate>
     <image>
-      <url>https://acoiman.github.io/img/icon-192.png</url>
+      <url>https://acoiman.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://acoiman.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>Story Map: Land Use and Land Cover Changes</title>
+      <link>https://acoiman.github.io/post/story_map/</link>
+      <pubDate>Sat, 02 May 2020 09:54:39 -0430</pubDate>
+      <guid>https://acoiman.github.io/post/story_map/</guid>
+      <description>&lt;p style=&#39;text-align: justify;&#39;&gt;The story map &#34;Cambios de Uso y Cobertura de la Tierra y Evolución de la Costa del Lago de Valencia en el Municipio Zamora del Estado Aragua, en el Período 1986-2014&#34; (Shoreline evolution of Valencia lake and land use and land cover changes in Zamora municipality, Aragua state, Venezuela, period 1986-2014) was  developed to take part in the National Award for Geographical Information System 2018 &lt;a href=&#34;https://storymaps.arcgis.com/stories/1eb3edbb365247c099abaf53d693a26e&#34; target=&#34;_blank&#34;&gt;(NASIG)&lt;/a&gt;, &lt;a href=&#34;http://www.esriven.com/&#34; target=&#34;_blank&#34;&gt;ESRI-Venezuela&lt;/a&gt;.  This story map won the third prize for the best Story Map, more details &lt;a href=&#34;https://bit.ly/2KRJboP&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Story Map link &lt;a href=&#34;https://arcg.is/0OPDrq&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://arcg.is/0OPDrq&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Retrieving, Analyzing and Visualizing georeferenced data</title>
+      <link>https://acoiman.github.io/post/mapping_earthquakes/</link>
+      <pubDate>Sat, 25 Apr 2020 10:32:45 -0430</pubDate>
+      <guid>https://acoiman.github.io/post/mapping_earthquakes/</guid>
+      <description>&lt;p&gt;This post contains three 
+&lt;a href=&#34;https://jupyter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jupyter notebooks&lt;/a&gt;
+ that will show you how to map earthquakes from a database using standard Python and 
+&lt;a href=&#34;https://python-visualization.github.io/folium/quickstart.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Folium&lt;/a&gt;
+ libraries. The database was filled out from a CSV file obtained from the 
+&lt;a href=&#34;https://vincentarelbundock.github.io/Rdatasets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rdatasets&lt;/a&gt;
+.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://nbviewer.jupyter.org/github/acoiman/mapping_earthquakes/blob/master/reading_dataset.ipynb&#34; target=&#34;_blank&#34;&gt;reading_dataset&lt;/a&gt; contains the code to read through the Rdatasers and look for dataset links containing the terms latitude and longitude.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://nbviewer.jupyter.org/github/acoiman/mapping_earthquakes/blob/master/db_earthquakes.ipynb&#34; target=&#34;_blank&#34;&gt;db_earthquakes&lt;/a&gt; creates a database from the selected dataset and computes some spatial statistics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://nbviewer.jupyter.org/github/acoiman/mapping_earthquakes/blob/master/map_earthquakes.ipynb&#34; target=&#34;_blank&#34;&gt;map_earthquakes&lt;/a&gt; takes the database data and creates a web map using the Folium package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Repository link: &lt;a href=&#34;https://github.com/acoiman/mapping_earthquakes&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://github.com/acoiman/mapping_earthquakes&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Final result:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#39;embed-responsive&#39; style=&#39;padding-bottom:75%&#39;&gt;
+    &lt;object data=&#39;../../maps/earthquake_fiji/map/&#39; width=&#39;100%&#39; height=&#39;100%&#39; position: relative display: block height: 0&gt;&lt;/object&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
