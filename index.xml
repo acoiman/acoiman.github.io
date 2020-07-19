@@ -56,10 +56,17 @@
 &lt;p&gt;&lt;a href=&#34;https://nbviewer.jupyter.org/github/acoiman/mapping_earthquakes/blob/master/map_earthquakes.ipynb&#34; target=&#34;_blank&#34;&gt;map_earthquakes&lt;/a&gt; takes the database data and creates a web map using the Folium package.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Click 
+&lt;a href=&#34;https://towardsdatascience.com/retrieve-analyze-and-visualize-georeferenced-data-aec1af28445b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;
+ to read the full post on 
+&lt;a href=&#34;https://towardsdatascience.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Towards Data Science&lt;/a&gt;
+.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Repository link: &lt;a href=&#34;https://github.com/acoiman/mapping_earthquakes&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://github.com/acoiman/mapping_earthquakes&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Final result:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#39;embed-responsive&#39; style=&#39;padding-bottom:75%&#39;&gt;
-    &lt;object data=&#39;../../maps/earthquake_fiji/map/&#39; width=&#39;100%&#39; height=&#39;100%&#39; position: relative display: block height: 0&gt;&lt;/object&gt;
+    &lt;object data=&#39;../../maps/earthquake_fiji/&#39; width=&#39;100%&#39; height=&#39;100%&#39; position: relative display: block height: 0&gt;&lt;/object&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -77,7 +84,7 @@
       <link>https://acoiman.github.io/publication/thesis_2/</link>
       <pubDate>Fri, 24 Jan 2020 16:31:45 -0430</pubDate>
       <guid>https://acoiman.github.io/publication/thesis_2/</guid>
-      <description></description>
+      <description>&lt;!-- WebGIS application link: &lt;a href=&#34;http://arcg.is/2gWhxHD&#34; target=&#34;_blank&#34;&gt;`http://arcg.is/2gWhxHD`&lt;/a&gt; --&gt;</description>
     </item>
     
     <item>
@@ -100,9 +107,9 @@
     
     <item>
       <title></title>
-      <link>https://acoiman.github.io/maps/earthquake_fiji/map/</link>
+      <link>https://acoiman.github.io/maps/earthquake_fiji/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://acoiman.github.io/maps/earthquake_fiji/map/</guid>
+      <guid>https://acoiman.github.io/maps/earthquake_fiji/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;head&gt;    
     &lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
