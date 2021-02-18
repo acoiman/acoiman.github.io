@@ -5,7 +5,7 @@
     <link>https://acoiman.github.io/post/</link>
       <atom:link href="https://acoiman.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 02 May 2020 09:54:39 -0430</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 06 Feb 2021 12:27:21 -0430</lastBuildDate>
     <image>
       <url>https://acoiman.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -13,12 +13,1314 @@
     </image>
     
     <item>
-      <title>Story Map: Land Use and Land Cover Changes</title>
-      <link>https://acoiman.github.io/post/story_map/</link>
-      <pubDate>Sat, 02 May 2020 09:54:39 -0430</pubDate>
-      <guid>https://acoiman.github.io/post/story_map/</guid>
-      <description>&lt;p style=&#39;text-align: justify;&#39;&gt;The story map &#34;Cambios de Uso y Cobertura de la Tierra y Evolución de la Costa del Lago de Valencia en el Municipio Zamora del Estado Aragua, en el Período 1986-2014&#34; (Shoreline evolution of Valencia lake and land use and land cover changes in Zamora municipality, Aragua state, Venezuela, period 1986-2014) was  developed to take part in the National Award for Geographical Information System 2018 &lt;a href=&#34;https://storymaps.arcgis.com/stories/1eb3edbb365247c099abaf53d693a26e&#34; target=&#34;_blank&#34;&gt;(NASIG)&lt;/a&gt;, &lt;a href=&#34;http://www.esriven.com/&#34; target=&#34;_blank&#34;&gt;ESRI-Venezuela&lt;/a&gt;.  This story map won the third prize for the best Story Map, more details &lt;a href=&#34;https://bit.ly/2KRJboP&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Story Map link &lt;a href=&#34;https://arcg.is/0OPDrq&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://arcg.is/0OPDrq&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+      <title>Binary Classification Machine Learning. Case Study Loan Prediction</title>
+      <link>https://acoiman.github.io/post/loan_prediction/</link>
+      <pubDate>Sat, 06 Feb 2021 12:27:21 -0430</pubDate>
+      <guid>https://acoiman.github.io/post/loan_prediction/</guid>
+      <description>&lt;h2 id=&#34;1-problem-definition&#34;&gt;&lt;strong&gt;1 Problem Definition&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The aim of this exercise is to use &lt;strong&gt;Machine Learning&lt;/strong&gt; techniques to predict loan eligibility based on customer details. These details are numerical and categorical data that include information about gender, marital status, education, dependents, income, loan amount, credit history, and others. The label of each record is the letter &lt;code&gt;Y&lt;/code&gt; if the loan is approved and &lt;code&gt;N&lt;/code&gt; is the loan is rejected.&lt;/p&gt;
+&lt;p&gt;The training dataset contains the following information:&lt;/p&gt;
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Variable&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Description&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Loan_ID&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Unique Loan ID&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Gender&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Male/ Female&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Married&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Applicant married (Y/N)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Dependents&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Number of dependents&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Education&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Applicant Education (Graduate/ Under Graduate)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Self_Employed&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Self employed (Y/N)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;ApplicantIncome&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Applicant income&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;CoapplicantIncome&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Coapplicant income&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;LoanAmount&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Loan amount in thousands&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Loan_Amount_Term&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Term of loan in months&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Credit_History&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;credit history meets guidelines&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Property_Area&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Urban/ Semi Urban/ Rural&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&#34;155&#34;&gt;&lt;p&gt;&lt;strong&gt;Loan_Status&lt;/strong&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&#34;465&#34;&gt;&lt;p&gt;Loan approved (Y/N)&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt; 
+&lt;p&gt;The test dataset contains the same columns as the training dataset except the last one (Loan approved).&lt;/p&gt;
+&lt;p&gt;To solve this problem we will implement a Machine Learning solution based on data transformation and algorithm tuning to improve model performance. This solution is inspired by the recipes contained in the book 
+&lt;a href=&#34;https://machinelearningmastery.com/machine-learning-with-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Machine Learning Mastery With Python&lt;/strong&gt;&lt;/a&gt;
+ by Jason Brownlee [1].&lt;/p&gt;
+&lt;h2 id=&#34;2-load-the-dataset&#34;&gt;&lt;strong&gt;2 Load the Dataset&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;First, we will load the required libraries to accomplish our goals.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load libraries
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from pandas import set_option
+from pandas.plotting import scatter_matrix
+
+from sklearn.preprocessing import StandardScaler
+
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GridSearchCV
+
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+
+from sklearn.pipeline import Pipeline
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import ExtraTreesClassifier
+
+from sklearn.impute import SimpleImputer
+
+import warnings
+warnings.filterwarnings(&#39;ignore&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;21-loading-training-dataset&#34;&gt;2.1 Loading training dataset&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load dataset
+df = pd.read_csv(&#39;train.csv&#39;)
+df.head()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Loan_ID&lt;/th&gt;
+      &lt;th&gt;Gender&lt;/th&gt;
+      &lt;th&gt;Married&lt;/th&gt;
+      &lt;th&gt;Dependents&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Self_Employed&lt;/th&gt;
+      &lt;th&gt;ApplicantIncome&lt;/th&gt;
+      &lt;th&gt;CoapplicantIncome&lt;/th&gt;
+      &lt;th&gt;LoanAmount&lt;/th&gt;
+      &lt;th&gt;Loan_Amount_Term&lt;/th&gt;
+      &lt;th&gt;Credit_History&lt;/th&gt;
+      &lt;th&gt;Property_Area&lt;/th&gt;
+      &lt;th&gt;Loan_Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;LP001002&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;5849&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;LP001003&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;4583&lt;/td&gt;
+      &lt;td&gt;1508.0&lt;/td&gt;
+      &lt;td&gt;128.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Rural&lt;/td&gt;
+      &lt;td&gt;N&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;LP001005&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;3000&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;66.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;LP001006&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Not Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;2583&lt;/td&gt;
+      &lt;td&gt;2358.0&lt;/td&gt;
+      &lt;td&gt;120.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;LP001008&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;6000&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;141.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+      &lt;td&gt;Y&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;According to the output, some columns have categorical data and other columns have numerical data.&lt;/p&gt;
+&lt;h2 id=&#34;3-imputation-of-missing-values-for-categorical-and-numerical-values&#34;&gt;&lt;strong&gt;3. Imputation of missing values for categorical and numerical values&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;As we do not want to reduce the amount of data for our Machine Learning solution, we need to fill null values with the most frequent one for each category in our data frame. But first, we will sum missing values for each column.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# sum missing values 
+df.isnull().sum()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Loan_ID               0
+Gender               13
+Married               3
+Dependents           15
+Education             0
+Self_Employed        32
+ApplicantIncome       0
+CoapplicantIncome     0
+LoanAmount           22
+Loan_Amount_Term     14
+Credit_History       50
+Property_Area         0
+Loan_Status           0
+dtype: int64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We have seven columns with missing values. Next, we will impute both categorical and numerical values and change the data type of some columns.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;imp = SimpleImputer(missing_values=np.nan, strategy=&#39;most_frequent&#39;)
+df = pd.DataFrame(imp.fit_transform(df),columns=df.columns,index=df.index)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df = df.astype({&#39;ApplicantIncome&#39;: np.int64, &#39;CoapplicantIncome&#39;:float,
+                &#39;LoanAmount&#39;:float,&#39;Loan_Amount_Term&#39;:float, &#39;Credit_History&#39;:float})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;4-transforming-categorical-data&#34;&gt;&lt;strong&gt;4. Transforming Categorical Data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In this section, we will transform categorical data because Machine Learning algorithm cannot deal with this type of data.&lt;/p&gt;
+&lt;p&gt;First, we will get unique values from categorical columns.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(df.Gender.unique(),
+df.Married.unique(),
+df.Dependents.unique(),
+df.Education.unique(),
+df.Self_Employed.unique(),
+df.Property_Area.unique(),
+df.Loan_Status.unique())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[&#39;Male&#39; &#39;Female&#39;] [&#39;No&#39; &#39;Yes&#39;] [&#39;0&#39; &#39;1&#39; &#39;2&#39; &#39;3+&#39;] [&#39;Graduate&#39; &#39;Not Graduate&#39;] [&#39;No&#39; &#39;Yes&#39;] [&#39;Urban&#39; &#39;Rural&#39; &#39;Semiurban&#39;] [&#39;Y&#39; &#39;N&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we will create and apply a function to generate the encoding scheme for categorical data and write back labels to the DataFrame. Based on 
+&lt;a href=&#34;%28https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63%29&#34;&gt;Dipanjan (DJ) Sarkar post&lt;/a&gt;
+.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from sklearn.preprocessing import LabelEncoder
+def encoding_schema(df, cat, label):
+    
+    &#39;&#39;&#39;Function to generate the encoding scheme for categorical data and 
+        write back labels to the DataFrame
+    &#39;&#39;&#39;
+    gle = LabelEncoder()
+    cat_labels = gle.fit_transform(df[cat])
+    cat_mappings = {index: label for index, label in enumerate(gle.classes_)}
+    
+    df[label] = cat_labels.astype(&#39;int64&#39;)
+    
+    return (&#39;Labels for {} are {}&#39;.format(cat, cat_mappings))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Gender 
+encoding_schema(df, &#39;Gender&#39;, &#39;GenderLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Gender are {0: &#39;Female&#39;, 1: &#39;Male&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Married 
+encoding_schema(df, &#39;Married&#39;, &#39;MarriedLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Married are {0: &#39;No&#39;, 1: &#39;Yes&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Dependents
+encoding_schema(df, &#39;Dependents&#39;, &#39;DependentsLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Dependents are {0: &#39;0&#39;, 1: &#39;1&#39;, 2: &#39;2&#39;, 3: &#39;3+&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Education
+encoding_schema(df, &#39;Education&#39;, &#39;EducationLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Education are {0: &#39;Graduate&#39;, 1: &#39;Not Graduate&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Self_Employed
+encoding_schema(df, &#39;Self_Employed&#39;, &#39;Self_EmployedLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Self_Employed are {0: &#39;No&#39;, 1: &#39;Yes&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Property_Area
+encoding_schema(df, &#39;Property_Area&#39;, &#39;Property_AreaLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Property_Area are {0: &#39;Rural&#39;, 1: &#39;Semiurban&#39;, 2: &#39;Urban&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Loan_Status
+encoding_schema(df, &#39;Loan_Status&#39;, &#39;Loan_StatusLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Loan_Status are {0: &#39;N&#39;, 1: &#39;Y&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we will get rid of unuseful columns and rename back useful columns&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;columns_to_keep  = [&#39;Loan_ID&#39;, &#39;GenderLabel&#39;, &#39;MarriedLabel&#39;, &#39;DependentsLabel&#39;, &#39;EducationLabel&#39;,
+       &#39;Self_EmployedLabel&#39;, &#39;ApplicantIncome&#39;, &#39;CoapplicantIncome&#39;, &#39;LoanAmount&#39;,
+       &#39;Loan_Amount_Term&#39;, &#39;Credit_History&#39;, &#39;Property_AreaLabel&#39;, &#39;Loan_StatusLabel&#39;]
+
+df = df[columns_to_keep]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;old_colnames  = [&#39;GenderLabel&#39;, &#39;MarriedLabel&#39;, &#39;DependentsLabel&#39;, &#39;EducationLabel&#39;,
+       &#39;Self_EmployedLabel&#39;, &#39;Property_AreaLabel&#39;, &#39;Loan_StatusLabel&#39;]
+
+new_colnames  = [&#39;Gender&#39;, &#39;Married&#39;, &#39;Dependents&#39;, &#39;Education&#39;,
+       &#39;Self_Employed&#39;, &#39;Property_Area&#39;, &#39;Loan_Status&#39;]
+
+col_rename_dict = {i:j for i,j in zip(old_colnames,new_colnames)}
+df = df.rename(columns=col_rename_dict)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;5-analyzing-data&#34;&gt;&lt;strong&gt;5 Analyzing Data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;After transforming our dataset, we can examine closely our data.&lt;/p&gt;
+&lt;h3 id=&#34;51-descriptive-statistics&#34;&gt;5.1 Descriptive Statistics&lt;/h3&gt;
+&lt;p&gt;Let&#39;s examine the number of rows and columns of our dataset.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# shape
+df.shape
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(614, 13)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We have 614 samples to produce our solution and we can observe that our dataset contains 13 attributes including the target attribute Loan_Status.&lt;/p&gt;
+&lt;p&gt;Now, let&#39;s look at the data type of each column.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df.dtypes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Loan_ID               object
+Gender                 int64
+Married                int64
+Dependents             int64
+Education              int64
+Self_Employed          int64
+ApplicantIncome        int64
+CoapplicantIncome    float64
+LoanAmount           float64
+Loan_Amount_Term     float64
+Credit_History       float64
+Property_Area          int64
+Loan_Status            int64
+dtype: object
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nearly all columns are numeric, some of them are real values (float) and others are integers (int).&lt;/p&gt;
+&lt;p&gt;Next, let&#39;s take a pick at the first 5 rows.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;set_option(&#39;display.width&#39;, 100)
+df.head()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Loan_ID&lt;/th&gt;
+      &lt;th&gt;Gender&lt;/th&gt;
+      &lt;th&gt;Married&lt;/th&gt;
+      &lt;th&gt;Dependents&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Self_Employed&lt;/th&gt;
+      &lt;th&gt;ApplicantIncome&lt;/th&gt;
+      &lt;th&gt;CoapplicantIncome&lt;/th&gt;
+      &lt;th&gt;LoanAmount&lt;/th&gt;
+      &lt;th&gt;Loan_Amount_Term&lt;/th&gt;
+      &lt;th&gt;Credit_History&lt;/th&gt;
+      &lt;th&gt;Property_Area&lt;/th&gt;
+      &lt;th&gt;Loan_Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;LP001002&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;5849&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;120.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;LP001003&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;4583&lt;/td&gt;
+      &lt;td&gt;1508.0&lt;/td&gt;
+      &lt;td&gt;128.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;LP001005&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;3000&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;66.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;LP001006&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;2583&lt;/td&gt;
+      &lt;td&gt;2358.0&lt;/td&gt;
+      &lt;td&gt;120.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;LP001008&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;6000&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;141.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;Through the output, we can corroborate columns are numeric and some of them have different scales, so it is possible we need to transform them later on.&lt;/p&gt;
+&lt;p&gt;Next, we will summarize the distribution of each attribute.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;set_option(&#39;precision&#39;, 3)
+df.describe()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Gender&lt;/th&gt;
+      &lt;th&gt;Married&lt;/th&gt;
+      &lt;th&gt;Dependents&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Self_Employed&lt;/th&gt;
+      &lt;th&gt;ApplicantIncome&lt;/th&gt;
+      &lt;th&gt;CoapplicantIncome&lt;/th&gt;
+      &lt;th&gt;LoanAmount&lt;/th&gt;
+      &lt;th&gt;Loan_Amount_Term&lt;/th&gt;
+      &lt;th&gt;Credit_History&lt;/th&gt;
+      &lt;th&gt;Property_Area&lt;/th&gt;
+      &lt;th&gt;Loan_Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;count&lt;/th&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+      &lt;td&gt;614.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;mean&lt;/th&gt;
+      &lt;td&gt;0.818&lt;/td&gt;
+      &lt;td&gt;0.653&lt;/td&gt;
+      &lt;td&gt;0.744&lt;/td&gt;
+      &lt;td&gt;0.218&lt;/td&gt;
+      &lt;td&gt;0.134&lt;/td&gt;
+      &lt;td&gt;5403.459&lt;/td&gt;
+      &lt;td&gt;1621.246&lt;/td&gt;
+      &lt;td&gt;145.466&lt;/td&gt;
+      &lt;td&gt;342.410&lt;/td&gt;
+      &lt;td&gt;0.855&lt;/td&gt;
+      &lt;td&gt;1.037&lt;/td&gt;
+      &lt;td&gt;0.687&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;std&lt;/th&gt;
+      &lt;td&gt;0.386&lt;/td&gt;
+      &lt;td&gt;0.476&lt;/td&gt;
+      &lt;td&gt;1.010&lt;/td&gt;
+      &lt;td&gt;0.413&lt;/td&gt;
+      &lt;td&gt;0.340&lt;/td&gt;
+      &lt;td&gt;6109.042&lt;/td&gt;
+      &lt;td&gt;2926.248&lt;/td&gt;
+      &lt;td&gt;84.181&lt;/td&gt;
+      &lt;td&gt;64.429&lt;/td&gt;
+      &lt;td&gt;0.352&lt;/td&gt;
+      &lt;td&gt;0.787&lt;/td&gt;
+      &lt;td&gt;0.464&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;min&lt;/th&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;150.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;9.000&lt;/td&gt;
+      &lt;td&gt;12.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;25%&lt;/th&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;2877.500&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;100.250&lt;/td&gt;
+      &lt;td&gt;360.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;50%&lt;/th&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;3812.500&lt;/td&gt;
+      &lt;td&gt;1188.500&lt;/td&gt;
+      &lt;td&gt;125.000&lt;/td&gt;
+      &lt;td&gt;360.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;75%&lt;/th&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;0.000&lt;/td&gt;
+      &lt;td&gt;5795.000&lt;/td&gt;
+      &lt;td&gt;2297.250&lt;/td&gt;
+      &lt;td&gt;164.750&lt;/td&gt;
+      &lt;td&gt;360.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;2.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;max&lt;/th&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;3.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;81000.000&lt;/td&gt;
+      &lt;td&gt;41667.000&lt;/td&gt;
+      &lt;td&gt;700.000&lt;/td&gt;
+      &lt;td&gt;480.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+      &lt;td&gt;2.000&lt;/td&gt;
+      &lt;td&gt;1.000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;We can observe our dataset has the same range, but they differ in mean values, so Standardization could be beneficial.&lt;/p&gt;
+&lt;p&gt;Let&#39;s see the class distribution from the Loan_Status&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df.groupby([&#39;Loan_Status&#39;]).size()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Loan_Status
+0    192
+1    422
+dtype: int64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The class &lt;code&gt;Loans_Status&lt;/code&gt; is imbalanced between YES(1) and NO(0)&lt;/p&gt;
+&lt;h3 id=&#34;52-unimodal-data-visualizations&#34;&gt;5.2 Unimodal Data Visualizations&lt;/h3&gt;
+&lt;p&gt;It is useful to look at our data through different visualization techniques in order to get insights about its distribution.&lt;/p&gt;
+&lt;p&gt;Let&#39;s plot a histogram to observe the dataset class distribution.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df.hist(sharex=False, sharey=False, xlabelsize=1, ylabelsize=1, figsize=(9,9))
+plt.show();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_37_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can see most of the class distributions are bimodal. For other attributes, the distribution is skewed right or skewed left and Gaussian-like.&lt;/p&gt;
+&lt;p&gt;We can observe easily this kind of distribution through 
+&lt;a href=&#34;https://www.data-to-viz.com/graph/density.html#:~:text=A%20density%20plot%20is%20a,used%20in%20the%20same%20concept&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Density Plots&lt;/a&gt;
+.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df.plot(kind=&#39;density&#39;, subplots=True, layout=(4,3), sharex=False, legend=False, fontsize=1, figsize=(10,12))
+plt.show();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_39_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s look at the spread of attribute values using 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Box_plot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;whisker plots&lt;/a&gt;
+.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;boxplot = df.boxplot(column=[&#39;Gender&#39;, &#39;Married&#39;, &#39;Dependents&#39;, &#39;Education&#39;, &#39;Self_Employed&#39;,
+       &#39;ApplicantIncome&#39;, &#39;CoapplicantIncome&#39;, &#39;LoanAmount&#39;, &#39;Loan_Amount_Term&#39;, &#39;Credit_History&#39;,
+       &#39;Property_Area&#39;, &#39;Loan_Status&#39;], figsize=(13, 9), rot=50)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_41_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Except for &lt;code&gt;ApplicantIncome&lt;/code&gt;(Applicant income) and &lt;code&gt;CoapplicantIncome&lt;/code&gt;(Coapplicant income), the attributes are not spread. When modeling it is possible to get some benefits if we standardize in order to line up mean values.&lt;/p&gt;
+&lt;h2 id=&#34;6-feature-selection&#34;&gt;&lt;strong&gt;6 Feature Selection&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;To shorten time computation and the performance of the Machine Learning Model we often prune the number of input features [2].&lt;/p&gt;
+&lt;p&gt;In this section, we will visualize the correlation between features through a 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Heat_map&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Heatmap&lt;/a&gt;
+.  A positive correlation means an increment in one value of a feature will increment the value of the target feature. On the other hand, a negative correlation means an increase in one value of a feature will decrease the value target feature [2].&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import seaborn as sns
+
+X = df.iloc[:,1:12]  #independent column
+y = df.iloc[:,12]    #target column
+
+# get correlations of each features in dataset
+corrmat = df.corr(method=&#39;pearson&#39;)
+top_corr_features = corrmat.index
+plt.figure(figsize=(20,20))
+
+# plot heat map
+g=sns.heatmap(df[top_corr_features].corr(),annot=True,cmap=&amp;quot;RdYlGn&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_44_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;According to the output, the correlation between features is not significant, we will thus use all features to train the model.&lt;/p&gt;
+&lt;h3 id=&#34;61-validation-dataset&#34;&gt;6.1 Validation Dataset&lt;/h3&gt;
+&lt;p&gt;Next, we will select a hold-out set. This dataset will be used to evaluate the performance of our model. We will use 70 % of our dataset for modeling and 30 % for validation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# replace values of the target features
+df[&#39;Loan_Status&#39;] = df.Loan_Status.replace({0: &#39;N&#39;, 1: &#39;Y&#39;})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# split-out validation dataset
+array = df.values
+X = array[:, 1:12].astype(float)
+Y = array[:, -1]
+validation_size = 0.30
+seed = 7
+X_train, X_validation, Y_train, Y_validation = train_test_split(X, Y, test_size=validation_size, random_state=seed)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;7-evaluating-algorithms-baseline&#34;&gt;&lt;strong&gt;7 Evaluating Algorithms: Baseline&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;To evaluate Machine Learning algorithms and select the best one, we will design a test harness with 10-fold cross-validation, and accuracy as a performance metric&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# test options and evaluation metric
+num_folds = 10
+seed = 7
+scoring = &#39;accuracy&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We will create a baseline in order to evaluate the performance of a set of algorithms capable of solving our problem.&lt;/p&gt;
+&lt;p&gt;The set of algorithms is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Linear Algorithms:&lt;/strong&gt;&lt;/em&gt; Logistic Regression (LR).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Nonlinear Algorithms:&lt;/strong&gt;&lt;/em&gt; Classification and Regression Trees (CART), Support Vector
+Machines (SVM), Gaussian Naive Bayes (NB), and k-Nearest Neighbors (KNN).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# spot-check Algoriths
+models = []
+models.append((&#39;LR&#39;, LogisticRegression()))
+models.append((&#39;KNN&#39;, KNeighborsClassifier()))
+models.append((&#39;CART&#39;, DecisionTreeClassifier()))
+models.append((&#39;NB&#39;, GaussianNB()))
+models.append((&#39;SVM&#39;, SVC()))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;results = []
+names = []
+for name, model in models:
+    kfold = KFold(n_splits=num_folds, random_state=seed)
+    cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+    results.append(cv_results)
+    names.append(name)
+    msg = &amp;quot;%s: %f (%f)&amp;quot; % (name, cv_results.mean(), cv_results.std())
+    print(msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;LR: 0.808915 (0.032245)
+KNN: 0.631728 (0.059356)
+CART: 0.671318 (0.045887)
+NB: 0.787929 (0.023846)
+SVM: 0.692193 (0.070921)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above code snippet uses the default parameters of the selected algorithm and evaluates each algorithm based on its mean and standard deviation. According to the output, it is worth further studying &lt;code&gt;SVM&lt;/code&gt; and &lt;code&gt;LR&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next, we will use Whisker plots to visualize the distribution of accuracy values calculated above.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# compare algorithms 
+fig = plt.figure(figsize=(9,9))
+fig.suptitle(&#39;Algorithm Comparison&#39;)
+ax = fig.add_subplot(111)
+plt.boxplot(results)
+ax.set_xticklabels(names)
+ax.set_ylabel(&#39;Accuracy&#39;)
+plt.show();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_55_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The results show an almost similar distribution between &lt;code&gt;SVM&lt;/code&gt; and &lt;code&gt;LR&lt;/code&gt;, we can see the algorithm with less variance is &lt;code&gt;NB&lt;/code&gt;, though.&lt;/p&gt;
+&lt;h2 id=&#34;8-evaluating-algorithms-standardize-data&#34;&gt;&lt;strong&gt;8 Evaluating Algorithms: Standardize Data&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;We think varying distributions of the dataset are affecting the algorithm performance. So, we need to evaluate each algorithm based on a  
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Feature_scaling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;standardized&lt;/a&gt;
+ copy (SC) of the dataset. SC means each attribute has a mean of 0 and SD of 1. To do that we use pipelines that standardize the dataset, build the model for each fold in the 
+&lt;a href=&#34;https://towardsdatascience.com/why-and-how-to-do-cross-validation-for-machine-learning-d5bd7e60c189&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cross validation test&lt;/a&gt;
+. This procedure allows us to prevent data leakage and carry out a better estimation of the algorithm&#39;s performance.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# standardize the dataset
+pipelines = []
+pipelines.append((&#39;ScaledLR&#39;, Pipeline([(&#39;Scaler&#39;, StandardScaler()), (&#39;LR&#39;, LogisticRegression())])))
+pipelines.append((&#39;ScaledKNN&#39;, Pipeline([(&#39;Scaler&#39;, StandardScaler()), (&#39;KNN&#39;, KNeighborsClassifier())])))
+pipelines.append((&#39;ScaledCART&#39;, Pipeline([(&#39;Scaler&#39;, StandardScaler()), (&#39;CART&#39;, DecisionTreeClassifier())])))
+pipelines.append((&#39;ScaledNB&#39;, Pipeline([(&#39;Scaler&#39;, StandardScaler()), (&#39;NB&#39;, GaussianNB())])))
+pipelines.append((&#39;ScaledSVM&#39;, Pipeline([(&#39;Scaler&#39;, StandardScaler()), (&#39;SVM&#39;, SVC())])))
+
+results = []
+names = []
+
+for name, model in pipelines:
+    kfold = KFold(n_splits=num_folds, random_state=seed)
+    cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+    results.append(cv_results)
+    names.append(name)
+    msg = &amp;quot;%s: %f (%f)&amp;quot; % (name, cv_results.mean(), cv_results.std())
+    print(msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;ScaledLR: 0.811240 (0.034929)
+ScaledKNN: 0.780731 (0.034462)
+ScaledCART: 0.687542 (0.032606)
+ScaledNB: 0.794906 (0.024752)
+ScaledSVM: 0.792525 (0.038202)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The standardized method also points out that &lt;code&gt;SVM&lt;/code&gt; and &lt;code&gt;LR&lt;/code&gt; have the best performance. Next, we will plot the distributions of accuracy scores through box plots.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# compare algorithms
+fig = plt.figure(figsize=(9,9))
+fig.suptitle(&amp;quot;Scaled Algoritm Comparison&amp;quot;)
+ax = fig.add_subplot(111)
+plt.boxplot(results)
+ax.set_xticklabels(names)
+ax.set_ylabel(&#39;Accuracy&#39;)
+plt.show();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_60_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9-algorithm-tuning&#34;&gt;&lt;strong&gt;9 Algorithm Tuning&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In this section, we will delve deeper into the parameters of &lt;code&gt;SVM&lt;/code&gt; and &lt;code&gt;Logistic Regression&lt;/code&gt; algorithms to enhance their performance.&lt;/p&gt;
+&lt;h3 id=&#34;91-tuning-svm&#34;&gt;9.1 Tuning SVM&lt;/h3&gt;
+&lt;p&gt;We will begin by tunning the value of the regularization parameter &lt;code&gt;C&lt;/code&gt;.  This parameter hinders learning complex models so that we can avoid 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Overfitting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;overfitting&lt;/a&gt;
+ [4]. The higher the values of &lt;code&gt;C&lt;/code&gt; the lower the regularization [5]. In other words, if the &lt;code&gt;C&lt;/code&gt; parameter is high we end up adjusting our model to all point features, so our model is likely overfitting. We will also tune the Kernel function parameter, so the best Kernel parameter will have a high-class separability [6]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# tune scaled SVM
+scaler = StandardScaler().fit(X_train)
+rescaledX = scaler.transform(X_train)
+c_values = [0.001, 0.01, 0.1, 1, 10]
+kernel_values = [&#39;linear&#39;, &#39;poly&#39;, &#39;rbf&#39;, &#39;sigmoid&#39;]
+param_grid = dict(C=c_values, kernel=kernel_values)
+model = SVC()
+kfold = KFold(n_splits=num_folds, random_state=seed)
+grid = GridSearchCV(estimator=model, param_grid=param_grid, scoring=scoring, cv=kfold)
+grid_result = grid.fit(rescaledX, Y_train)
+print(&amp;quot;Best score: %f using %s&amp;quot; % (grid_result.best_score_, grid_result.best_params_))
+means = grid_result.cv_results_[&#39;mean_test_score&#39;]
+stds = grid_result.cv_results_[&#39;std_test_score&#39;]
+params = grid_result.cv_results_[&#39;params&#39;]
+for mean, stdev, param in zip(means, stds, params):
+    print(&amp;quot;Mean Test Score: %f, STD (%f) with: %r&amp;quot; % (mean, stdev, param))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Best score: 0.808915 using {&#39;C&#39;: 0.01, &#39;kernel&#39;: &#39;linear&#39;}
+Mean Test Score: 0.694518, STD (0.074408) with: {&#39;C&#39;: 0.001, &#39;kernel&#39;: &#39;linear&#39;}
+Mean Test Score: 0.696844, STD (0.071884) with: {&#39;C&#39;: 0.001, &#39;kernel&#39;: &#39;poly&#39;}
+Mean Test Score: 0.694518, STD (0.074408) with: {&#39;C&#39;: 0.001, &#39;kernel&#39;: &#39;rbf&#39;}
+Mean Test Score: 0.694518, STD (0.074408) with: {&#39;C&#39;: 0.001, &#39;kernel&#39;: &#39;sigmoid&#39;}
+Mean Test Score: 0.808915, STD (0.043647) with: {&#39;C&#39;: 0.01, &#39;kernel&#39;: &#39;linear&#39;}
+Mean Test Score: 0.696844, STD (0.071884) with: {&#39;C&#39;: 0.01, &#39;kernel&#39;: &#39;poly&#39;}
+Mean Test Score: 0.694518, STD (0.074408) with: {&#39;C&#39;: 0.01, &#39;kernel&#39;: &#39;rbf&#39;}
+Mean Test Score: 0.694518, STD (0.074408) with: {&#39;C&#39;: 0.01, &#39;kernel&#39;: &#39;sigmoid&#39;}
+Mean Test Score: 0.808915, STD (0.043647) with: {&#39;C&#39;: 0.1, &#39;kernel&#39;: &#39;linear&#39;}
+Mean Test Score: 0.764507, STD (0.048467) with: {&#39;C&#39;: 0.1, &#39;kernel&#39;: &#39;poly&#39;}
+Mean Test Score: 0.745847, STD (0.059565) with: {&#39;C&#39;: 0.1, &#39;kernel&#39;: &#39;rbf&#39;}
+Mean Test Score: 0.808915, STD (0.043647) with: {&#39;C&#39;: 0.1, &#39;kernel&#39;: &#39;sigmoid&#39;}
+Mean Test Score: 0.808915, STD (0.043647) with: {&#39;C&#39;: 1, &#39;kernel&#39;: &#39;linear&#39;}
+Mean Test Score: 0.797176, STD (0.040461) with: {&#39;C&#39;: 1, &#39;kernel&#39;: &#39;poly&#39;}
+Mean Test Score: 0.792525, STD (0.038202) with: {&#39;C&#39;: 1, &#39;kernel&#39;: &#39;rbf&#39;}
+Mean Test Score: 0.794906, STD (0.041162) with: {&#39;C&#39;: 1, &#39;kernel&#39;: &#39;sigmoid&#39;}
+Mean Test Score: 0.808915, STD (0.043647) with: {&#39;C&#39;: 10, &#39;kernel&#39;: &#39;linear&#39;}
+Mean Test Score: 0.752879, STD (0.033436) with: {&#39;C&#39;: 10, &#39;kernel&#39;: &#39;poly&#39;}
+Mean Test Score: 0.757641, STD (0.032758) with: {&#39;C&#39;: 10, &#39;kernel&#39;: &#39;rbf&#39;}
+Mean Test Score: 0.697010, STD (0.053792) with: {&#39;C&#39;: 10, &#39;kernel&#39;: &#39;sigmoid&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;According to the output, the best performance for the &lt;code&gt;SVC&lt;/code&gt; has an accuracy of &lt;em&gt;&lt;strong&gt;0.808915&lt;/strong&gt;&lt;/em&gt; with a &lt;code&gt;C&lt;/code&gt; parameter of &lt;strong&gt;0.01&lt;/strong&gt; and a &lt;em&gt;&lt;strong&gt;Linear&lt;/strong&gt;&lt;/em&gt; Kernel.&lt;/p&gt;
+&lt;h3 id=&#34;92-tuning-logistic-regression&#34;&gt;9.2 Tuning Logistic Regression&lt;/h3&gt;
+&lt;p&gt;Let&#39;s apply the same procedure to the Logistic Regression algorithm. But, in this case,  we will only tune the value of the regularization parameter &lt;code&gt;C&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# tune scaled Logistic Regression
+scaler = StandardScaler().fit(X_train)
+rescaledX = scaler.transform(X_train)
+c_values = [0.001, 0.01, 0.1, 1, 10]
+param_grid = dict(C=c_values, )
+model = LogisticRegression(penalty=&#39;l2&#39;)
+kfold = KFold(n_splits=num_folds, random_state=seed)
+grid = GridSearchCV(estimator=model, param_grid=param_grid, scoring=scoring, cv=kfold)
+grid_result = grid.fit(rescaledX, Y_train)
+print(&amp;quot;Best score: %f using %s&amp;quot; % (grid_result.best_score_, grid_result.best_params_))
+means = grid_result.cv_results_[&#39;mean_test_score&#39;]
+stds = grid_result.cv_results_[&#39;std_test_score&#39;]
+params = grid_result.cv_results_[&#39;params&#39;]
+for mean, stdev, param in zip(means, stds, params):
+    print(&amp;quot;Mean Test Score: %f, STD(%f) with: %r&amp;quot; % (mean, stdev, param))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Best score: 0.811240 using {&#39;C&#39;: 0.1}
+Mean Test Score: 0.694518, STD(0.074408) with: {&#39;C&#39;: 0.001}
+Mean Test Score: 0.808915, STD(0.043647) with: {&#39;C&#39;: 0.01}
+Mean Test Score: 0.811240, STD(0.034929) with: {&#39;C&#39;: 0.1}
+Mean Test Score: 0.811240, STD(0.034929) with: {&#39;C&#39;: 1}
+Mean Test Score: 0.811240, STD(0.034929) with: {&#39;C&#39;: 10}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;According to the output, the best performance for the &lt;code&gt;LogisticRegression&lt;/code&gt; has an accuracy of &lt;strong&gt;0.811240&lt;/strong&gt; with a &lt;code&gt;C&lt;/code&gt; parameter of &lt;strong&gt;0.1&lt;/strong&gt;. So we opt to use the &lt;strong&gt;Logistic Regression&lt;/strong&gt; algorithm to build our prediction model.&lt;/p&gt;
+&lt;h2 id=&#34;10-ensemble-methods&#34;&gt;&lt;strong&gt;10 Ensemble Methods&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In this section we will combine various models in order to obtain the best predictive model, this technique is called &lt;strong&gt;Ensemble Methods&lt;/strong&gt; [7].&lt;/p&gt;
+&lt;p&gt;We will test two 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Boosting_%28machine_learning%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Boosting Methods&lt;/a&gt;
+ and two 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Bootstrap_aggregating#:~:text=Bootstrap%20aggregating%2C%20also%20called%20bagging,and%20helps%20to%20avoid%20overfitting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bagging methods&lt;/a&gt;
+:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Boosting Methods: AdaBoost (AB) and Gradient Boosting (GBM).&lt;/li&gt;
+&lt;li&gt;Bagging Methods: Random Forests (RF) and Extra Trees (ET).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The same test schema will be used, 10-fold cross-validation. We will not standardize data because the ensemble methods we will use are based on decision trees,  that are less prone to be affected by the data distribution.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# ensembles
+ensembles = []
+ensembles.append((&#39;AB&#39;, AdaBoostClassifier()))
+ensembles.append((&#39;GBM&#39;, GradientBoostingClassifier()))
+ensembles.append((&#39;RF&#39;, RandomForestClassifier()))
+ensembles.append((&#39;ET&#39;, ExtraTreesClassifier()))
+results = []
+names = []
+for name, model in ensembles:
+    kfold = KFold(n_splits=num_folds, random_state=seed)
+    cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+    results.append(cv_results)
+    names.append(name)
+    msg = &amp;quot;Accuracy %s: %f,  STD(%f)&amp;quot; % (name, cv_results.mean(), cv_results.std())
+    print(msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Accuracy AB: 0.773920,  STD(0.045239)
+Accuracy GBM: 0.778571,  STD(0.039141)
+Accuracy RF: 0.778571,  STD(0.027836)
+Accuracy ET: 0.743632,  STD(0.017364)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&#39;s  plot the distributions of accuracy scores through box plots.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fig = plt.figure(figsize=(9,9))
+fig.suptitle(&#39;Ensemble Algorith Comparison&#39;)
+ax = fig.add_subplot(111)
+plt.boxplot(results)
+ax.set_xticklabels(names)
+ax.set_ylabel(&#39;Accuracy&#39;)
+plt.show();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./loan_prediction_70_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;According to the outputs, the performance of ensemble methods is no better than Linear Algorithms, so we will finalize our model with the &lt;em&gt;&lt;strong&gt;Logistic Regression&lt;/strong&gt;&lt;/em&gt; algorithm.&lt;/p&gt;
+&lt;h2 id=&#34;11-finalizing--model&#34;&gt;&lt;strong&gt;11 Finalizing  Model&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Our findings show that the &lt;strong&gt;Logistic Regression&lt;/strong&gt; model is less complex and more stable than the other tested models. In this section, we will train the &lt;strong&gt;Logistic Regression&lt;/strong&gt; model for the whole dataset and make predictions for the validation dataset to see if our findings are also valid for the validation dataset. As before, this validation will be carried out on a standardized version of the test set.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# prepare the model
+scaler = StandardScaler().fit(X_train)
+rescaledX = scaler.transform(X_train)
+model = LogisticRegression(C= 0.1, penalty=&#39;l2&#39;)
+model.fit(rescaledX, Y_train)
+
+# estimate accuarcy on validation dataset
+rescaledValidationX = scaler.transform(X_validation)
+predictions = model.predict(rescaledValidationX)
+print(&#39;Accuracy Score:&#39;,round(accuracy_score(Y_validation, predictions), 2));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Accuracy Score: 0.81
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can see that &lt;strong&gt;81%&lt;/strong&gt; of our predictions were correct. Now, let&#39;s create a table containing the classification report.&lt;/p&gt;
+&lt;p&gt;Next, we will create a data frame containing the classification report.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# generate classification report
+cr = classification_report(Y_validation, predictions, output_dict=True)
+dfcr = pd.DataFrame.from_dict(cr)
+dfcr = dfcr[[&#39;N&#39;, &#39;Y&#39;]].T
+dfcr = dfcr[[&#39;precision&#39;, &#39;recall&#39;, &#39;f1-score&#39;, &#39;support&#39;]]
+dfcr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;precision&lt;/th&gt;
+      &lt;th&gt;recall&lt;/th&gt;
+      &lt;th&gt;f1-score&lt;/th&gt;
+      &lt;th&gt;support&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;N&lt;/th&gt;
+      &lt;td&gt;0.933&lt;/td&gt;
+      &lt;td&gt;0.459&lt;/td&gt;
+      &lt;td&gt;0.615&lt;/td&gt;
+      &lt;td&gt;61.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Y&lt;/th&gt;
+      &lt;td&gt;0.787&lt;/td&gt;
+      &lt;td&gt;0.984&lt;/td&gt;
+      &lt;td&gt;0.875&lt;/td&gt;
+      &lt;td&gt;124.0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;According to the output, &lt;code&gt;f1-score&lt;/code&gt; and &lt;code&gt;support&lt;/code&gt; values indicate that our dataset is imbalanced. So, our &lt;code&gt;Accuracy Score&lt;/code&gt; (81%) is not completely accurate because this metrics is reliable when we have a balanced dataset (similar class distribution). This result indicates that our datasets could need stratified sampling or rebalancing [8]&lt;/p&gt;
+&lt;h2 id=&#34;12-predicting-on-test-dataset&#34;&gt;&lt;strong&gt;12 Predicting on test dataset&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In this section, we will use our trained model to predict loan status on the test dataset.&lt;/p&gt;
+&lt;p&gt;First we will load and visualize the test dataset.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# load test dataset
+df_test = pd.read_csv(&#39;test.csv&#39;)
+df_test.head()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Loan_ID&lt;/th&gt;
+      &lt;th&gt;Gender&lt;/th&gt;
+      &lt;th&gt;Married&lt;/th&gt;
+      &lt;th&gt;Dependents&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Self_Employed&lt;/th&gt;
+      &lt;th&gt;ApplicantIncome&lt;/th&gt;
+      &lt;th&gt;CoapplicantIncome&lt;/th&gt;
+      &lt;th&gt;LoanAmount&lt;/th&gt;
+      &lt;th&gt;Loan_Amount_Term&lt;/th&gt;
+      &lt;th&gt;Credit_History&lt;/th&gt;
+      &lt;th&gt;Property_Area&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;LP001015&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;5720&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;110.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;LP001022&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;3076&lt;/td&gt;
+      &lt;td&gt;1500&lt;/td&gt;
+      &lt;td&gt;126.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;LP001031&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;5000&lt;/td&gt;
+      &lt;td&gt;1800&lt;/td&gt;
+      &lt;td&gt;208.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;LP001035&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;2340&lt;/td&gt;
+      &lt;td&gt;2546&lt;/td&gt;
+      &lt;td&gt;100.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;NaN&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;LP001051&lt;/td&gt;
+      &lt;td&gt;Male&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Not Graduate&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;3276&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;78.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;Urban&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;Let&#39;s get a count of missing values.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# sum of missing values 
+df_test.isnull().sum()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Loan_ID               0
+Gender               11
+Married               0
+Dependents           10
+Education             0
+Self_Employed        23
+ApplicantIncome       0
+CoapplicantIncome     0
+LoanAmount            5
+Loan_Amount_Term      6
+Credit_History       29
+Property_Area         0
+dtype: int64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following lines of code will allow us to get rid of missing values by imputing them, and change the data type of some columns.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# imputing both categorical and numerical values
+imp = SimpleImputer(missing_values=np.nan, strategy=&#39;most_frequent&#39;)
+df_test = pd.DataFrame(imp.fit_transform(df_test),columns=df_test.columns,index=df_test.index)
+
+# change data types
+df_test = df_test.astype({&#39;ApplicantIncome&#39;: np.int64, &#39;CoapplicantIncome&#39;:float,
+                &#39;LoanAmount&#39;:float,&#39;Loan_Amount_Term&#39;:float, &#39;Credit_History&#39;:float})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&#39;s check the results,&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# sum of missing values 
+df_test.isnull().sum()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Loan_ID               0
+Gender                0
+Married               0
+Dependents            0
+Education             0
+Self_Employed         0
+ApplicantIncome       0
+CoapplicantIncome     0
+LoanAmount            0
+Loan_Amount_Term      0
+Credit_History        0
+Property_Area         0
+GenderLabel           0
+MarriedLabel          0
+DependentsLabel       0
+EducationLabel        0
+Self_EmployedLabel    0
+Property_AreaLabel    0
+dtype: int64
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we will  transform categorical by applying the &lt;code&gt;encoding_schema()&lt;/code&gt; function defined above.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Gender 
+encoding_schema(df_test, &#39;Gender&#39;, &#39;GenderLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Gender are {0: &#39;Female&#39;, 1: &#39;Male&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Married 
+encoding_schema(df_test, &#39;Married&#39;, &#39;MarriedLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Married are {0: &#39;No&#39;, 1: &#39;Yes&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Dependents
+encoding_schema(df_test, &#39;Dependents&#39;, &#39;DependentsLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Dependents are {0: &#39;0&#39;, 1: &#39;1&#39;, 2: &#39;2&#39;, 3: &#39;3+&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Education
+encoding_schema(df_test, &#39;Education&#39;, &#39;EducationLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Education are {0: &#39;Graduate&#39;, 1: &#39;Not Graduate&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Self_Employed
+encoding_schema(df_test, &#39;Self_Employed&#39;, &#39;Self_EmployedLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Self_Employed are {0: &#39;No&#39;, 1: &#39;Yes&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# apply encoding_scheme to Property_Area
+encoding_schema(df_test, &#39;Property_Area&#39;, &#39;Property_AreaLabel&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Labels for Property_Area are {0: &#39;Rural&#39;, 1: &#39;Semiurban&#39;, 2: &#39;Urban&#39;}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After transforming categorical data,  we will get rid of unuseful columns and rename back useful columns.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# get rid of unuseful column
+columns_to_keep  = [&#39;Loan_ID&#39;, &#39;GenderLabel&#39;, &#39;MarriedLabel&#39;, &#39;DependentsLabel&#39;, &#39;EducationLabel&#39;,
+       &#39;Self_EmployedLabel&#39;, &#39;ApplicantIncome&#39;, &#39;CoapplicantIncome&#39;, &#39;LoanAmount&#39;,
+       &#39;Loan_Amount_Term&#39;, &#39;Credit_History&#39;, &#39;Property_AreaLabel&#39;]
+
+df_test = df_test[columns_to_keep]
+df_test.dtypes
+
+# rename back the column names
+old_colnames  = [&#39;GenderLabel&#39;, &#39;MarriedLabel&#39;, &#39;DependentsLabel&#39;, &#39;EducationLabel&#39;,
+       &#39;Self_EmployedLabel&#39;, &#39;Property_AreaLabel&#39;]
+
+new_colnames  = [&#39;Gender&#39;, &#39;Married&#39;, &#39;Dependents&#39;, &#39;Education&#39;,
+       &#39;Self_Employed&#39;, &#39;Property_Area&#39;]
+
+col_rename_dict = {i:j for i,j in zip(old_colnames,new_colnames)}
+df_test = df_test.rename(columns=col_rename_dict)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&#39;s visualize the the results.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df_test.head()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+&lt;pre&gt;&lt;code&gt;.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/style&gt;&lt;/p&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Loan_ID&lt;/th&gt;
+      &lt;th&gt;Gender&lt;/th&gt;
+      &lt;th&gt;Married&lt;/th&gt;
+      &lt;th&gt;Dependents&lt;/th&gt;
+      &lt;th&gt;Education&lt;/th&gt;
+      &lt;th&gt;Self_Employed&lt;/th&gt;
+      &lt;th&gt;ApplicantIncome&lt;/th&gt;
+      &lt;th&gt;CoapplicantIncome&lt;/th&gt;
+      &lt;th&gt;LoanAmount&lt;/th&gt;
+      &lt;th&gt;Loan_Amount_Term&lt;/th&gt;
+      &lt;th&gt;Credit_History&lt;/th&gt;
+      &lt;th&gt;Property_Area&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;LP001015&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;5720&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;110.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;LP001022&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;3076&lt;/td&gt;
+      &lt;td&gt;1500.0&lt;/td&gt;
+      &lt;td&gt;126.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;LP001031&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;5000&lt;/td&gt;
+      &lt;td&gt;1800.0&lt;/td&gt;
+      &lt;td&gt;208.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;LP001035&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;2340&lt;/td&gt;
+      &lt;td&gt;2546.0&lt;/td&gt;
+      &lt;td&gt;100.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;LP001051&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;3276&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
+      &lt;td&gt;78.0&lt;/td&gt;
+      &lt;td&gt;360.0&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;Next, we will prepare our test dataset for predictions and use our trained model to predict loan_status.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;feature_names = [&#39;Gender&#39;, &#39;Married&#39;, &#39;Dependents&#39;, &#39;Education&#39;, &#39;Self_Employed&#39;,
+       &#39;ApplicantIncome&#39;, &#39;CoapplicantIncome&#39;, &#39;LoanAmount&#39;, &#39;Loan_Amount_Term&#39;, &#39;Credit_History&#39;,
+       &#39;Property_Area&#39;]
+
+# define index
+df_test.index = df_test[&#39;Loan_ID&#39;]
+
+# define validation features
+X_validation = df_test[feature_names]
+
+# rescale validation set
+rescaledValidationX = scaler.transform(X_validation)
+    
+# calculate the predictions for each class
+X_predict = model.predict(rescaledValidationX)
+
+# create the solution dataframe
+result = pd.DataFrame(data=X_predict, index=df_test[&#39;Loan_ID&#39;], columns=[&#39;Loan_Status&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we will save our result as a CSV file and submit it to the Solution Checker of the 
+&lt;a href=&#34;https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Practice Problem Loan Prediction&lt;/a&gt;
+. Our submission got an accuracy of &lt;strong&gt;0.77&lt;/strong&gt; on the leaderboard.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# save the solution as an csv file
+result.to_csv(&#39;solution.csv&#39;, header=True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;13-conclusion&#34;&gt;&lt;strong&gt;13 Conclusion&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Through this notebook, we showed you a simple workflow to carry out a binary classification using Machine Learning. This is a methodology proposal that is open to be improved. Although we got moderate accuracy (0.81 and 0.77), future works are needed to deal with imbalanced data and enhance accuracy. If you have a comment or suggestion please hit the Contact tab of my web page (&lt;a href=&#34;https://acoiman.github.io/#contact&#34;&gt;https://acoiman.github.io/#contact&lt;/a&gt;) and send us a message.&lt;/p&gt;
+&lt;p&gt;The complete code from this post can be found 
+&lt;a href=&#34;https://github.com/acoiman/loan_prediction&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id=&#34;14-references&#34;&gt;&lt;strong&gt;14 References&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;[1]: &lt;a href=&#34;https://machinelearningmastery.com/machine-learning-with-python/&#34;&gt;https://machinelearningmastery.com/machine-learning-with-python/&lt;/a&gt; &amp;ldquo;Machine Learning Mastery With Python&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;[2]: &lt;a href=&#34;https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/&#34;&gt;https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/&lt;/a&gt; &amp;ldquo;How to Choose a Feature Selection Method For Machine Learning&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;[3]: &lt;a href=&#34;https://towardsdatascience.com/feature-selection-techniques-in-machine-learning-with-python-f24e7da3f36e&#34;&gt;https://towardsdatascience.com/feature-selection-techniques-in-machine-learning-with-python-f24e7da3f36e&lt;/a&gt; &amp;ldquo;Feature Selection Techniques in Machine Learning with Python&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;[4]:https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a &amp;ldquo;Regularization in Machine Learning&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;[5]:  Müller, A. Guido, S. (2016). Introduction to machine learning with python. O&#39;Reilly Media, Incorporated. USA.&lt;/p&gt;
+&lt;p&gt;[6]: Liu, Z., &amp;amp; Xu, H. (2014). Kernel parameter selection for support vector machine classification. Journal of Algorithms &amp;amp; Computational Technology, 8(2), 163-177.&lt;/p&gt;
+&lt;p&gt;[7]: &lt;a href=&#34;https://towardsdatascience.com/ensemble-methods-in-machine-learning-what-are-they-and-why-use-them-68ec3f9fef5f#:~:text=Ensemble%20methods%20is%20a%20machine,machine%20learning%20and%20model%20building&#34;&gt;https://towardsdatascience.com/ensemble-methods-in-machine-learning-what-are-they-and-why-use-them-68ec3f9fef5f#:~:text=Ensemble%20methods%20is%20a%20machine,machine%20learning%20and%20model%20building&lt;/a&gt;. Ensemble Methods in Machine Learning: What are They and Why Use Them?&lt;/p&gt;
+&lt;p&gt;[8]: &lt;a href=&#34;https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html?highlight=Classification%20Report&#34;&gt;https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html?highlight=Classification%20Report&lt;/a&gt;. Classification Report.&lt;/p&gt;
 </description>
     </item>
     

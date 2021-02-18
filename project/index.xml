@@ -5,12 +5,32 @@
     <link>https://acoiman.github.io/project/</link>
       <atom:link href="https://acoiman.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 03 May 2020 10:18:59 -0430</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Feb 2021 10:53:56 -0430</lastBuildDate>
     <image>
       <url>https://acoiman.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>https://acoiman.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Web Maps</title>
+      <link>https://acoiman.github.io/project/webmapapps/</link>
+      <pubDate>Sun, 14 Feb 2021 10:53:56 -0430</pubDate>
+      <guid>https://acoiman.github.io/project/webmapapps/</guid>
+      <description>&lt;p style=&#39;text-align: justify;&#39;&gt;The main goal of this project was to developed web mapping applications for environmental and territorial management in the Aragua state. These web maps were the first mapping tools developed to help regional government staff to visualize geospatial data about the environment and land use planning.  The web mapping applications contain information about land use planning, roads, hydrography, urban areas, protected areas, administrative boundaries, and current and potential mining activities.  The main portal of the project shows 4 web mapping application and one mobile application. Three apps are for land use planning and two apps are for mining.&lt;/p&gt;
+&lt;p&gt;Link to web mapping applications &lt;a href=&#34;https://arcg.is/0OPDrq&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;http://proteccionambiental.aragua.gob.ve/mapas&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Story Map</title>
+      <link>https://acoiman.github.io/project/story_map/</link>
+      <pubDate>Sat, 13 Feb 2021 10:36:58 -0430</pubDate>
+      <guid>https://acoiman.github.io/project/story_map/</guid>
+      <description>&lt;p style=&#39;text-align: justify;&#39;&gt;The main goal of this activity was to create an ArcGIS StoryMap to show the shoreline dynamics of the Valencia lake and the magnitude of Land Use and Land Cover changes in Zamora Municipality, Venezuela from 1986 to 2014. This StoryMap was conceived as a means to show the results of a postgraduate thesis, and to take part in the National Award for Geographical Information System 2018 (NASIG), ESRI-Venezuela. We opted to build an &lt;a href=&#34;https://storymaps.arcgis.com/&#34; target=&#34;_blank&#34;&gt;ArcGIS StoryMap&lt;/a&gt; because it is an application based on the web and the ArcGIS platform that allows developer to share maps in a setting containing narrative text and multimedia. This story map won the third prize for the best Story Map, more details &lt;a href=&#34;https://bit.ly/2KRJboP&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Story Map link &lt;a href=&#34;https://arcg.is/0OPDrq&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://arcg.is/0OPDrq&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Geoportal INSAI</title>
