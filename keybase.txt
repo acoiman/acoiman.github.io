@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/acoiman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://acoiman.github.io
+  * I am acoiman (https://keybase.io/acoiman) on keybase.
+  * I have a public key ASCera3fEvZtKETqRO65mX0m7u8AEa9BuDMpE0HVDbCajQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209eadaddf12f66d2844ea44eeb9997d26eeef0011af41b833291341d50db09a8d0a",
+      "host": "keybase.io",
+      "kid": "01209eadaddf12f66d2844ea44eeb9997d26eeef0011af41b833291341d50db09a8d0a",
+      "uid": "e1b568a72b1773ddfb8cdf1e7fb4d919",
+      "username": "acoiman"
+    },
+    "merkle_root": {
+      "ctime": 1628347434,
+      "hash": "424c441b5394c22da62496b4775804addf60e2f64314e46a390fae77c5ce7c4ebef973eb83de75176efc8365b2a7c5cd134aa25d9931507b1a52c76cba81c644",
+      "hash_meta": "9fe0bbbdaafe8694d6dbc0c1d6ea55d907e155495bc83a5896511b7be136a364",
+      "seqno": 20523485
+    },
+    "service": {
+      "entropy": "JpW34LX9XnhRarJmCHwPFyZY",
+      "hostname": "acoiman.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.7.0"
+  },
+  "ctime": 1628349283,
+  "expire_in": 504576000,
+  "prev": "d9efe96b73dc6c0f0aa8b458bbae899d3f7a987370a916c62b93030fe1b1bea9",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnq2t3xL2bShE6kTuuZl9Ju7vABGvQbgzKRNB1Q2wmo0Kp3BheWxvYWTESpcCCMQg2e/pa3PcbA8KqLRYu66JnT96mHNwqRbGK5MDD+GxvqnEIDStc5JSyNbAUYefKYU8ZxpNv8RRpLSXcS/I1aeNpVVWAgHCo3NpZ8RAX1EBryfTteojCDN/zlKBQWQRXfyoRvDaCxmaF3IWEr9VNcvnchsBXieuR32zJo9ZNK7k1sSB6Q6na1MKYQojBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMNUkBrDTHoagJg+Mo38ekK4jTtpLSSJnrP/jUteP+m5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/acoiman
+
+==================================================================
