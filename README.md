@@ -10,7 +10,7 @@ Personal portfolio of Abraham Coiman
 
 This repository hosts the **compiled, production-ready output** of the portfolio website. The files here are generated automatically by [Vite](https://vitejs.dev/) and are not meant to be edited directly.
 
-The source code (React components, assets, configuration) is stored in a separate private repository.
+The source code (React components, assets, and configuration) is stored in a separate private repository at [https://github.com/acoiman/mywebsite/](https://github.com/acoiman/mywebsite)**.
 
 ---
 
